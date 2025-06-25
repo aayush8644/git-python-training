@@ -1,0 +1,32 @@
+Pseudo-classes in CSS:
+
+Used to define the special state of an element.
+
+Examples: :hover, :focus, :nth-child(), :first-child
+
+CSS Code using Pseudo-element:
+
+html
+Copy code
+<style>
+.logo {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: relative;
+  text-align: center;
+  line-height: 100px;
+}
+
+.logo::after {
+  content: "Logo";
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  left: 0;
+  font-weight: bold;
+}
+</style>
+
+<div class="logo"></div>
